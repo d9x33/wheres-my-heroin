@@ -4,7 +4,7 @@
 
 ;; Default wmh dir
 (define wmh-dir
-  (current-directory))
+  (path-only (path->complete-path (find-system-path 'run-file))))
 
 ;; EXAMPLE
 ;; Hash table of directories
